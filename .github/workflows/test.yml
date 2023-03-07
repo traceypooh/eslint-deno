@@ -1,0 +1,20 @@
+name: CICD
+on: push
+
+jobs:
+  lint-deno:
+    runs-on: ubuntu-latest
+    container:
+      image: denoland/deno
+    steps:
+    - uses: actions/checkout@v2
+    - run: deno cache  npm:eslint-config-airbnb-base
+    - run: deno run -A npm:eslint .
+
+  lint-node:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-node@v3
+    - run: npm i -g eslint-config-airbnb-base
+    - run: npx run eslint .

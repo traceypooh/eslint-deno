@@ -1,5 +1,7 @@
 # eslint-deno
-minimal deno + eslint checking showing quirks
+Minimal deno + eslint checking showing quirks
+
+These are issues that don't happen using `npx eslint .`
 
 ## this demonstrates a few issues:
 - `import/no-unresolved` always unhappy
