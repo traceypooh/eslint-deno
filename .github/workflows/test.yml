@@ -17,4 +17,4 @@ jobs:
     - uses: actions/checkout@v2
     - uses: actions/setup-node@v3
     - run: npm i -g eslint-config-airbnb-base
-    - run: npx run eslint .
+    - run: npx eslint .
