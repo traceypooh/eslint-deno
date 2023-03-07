@@ -14,7 +14,7 @@ deno run -A npm:eslint .
 
 ./app.js
   1:8  error  Unable to resolve path to module './lib.js'           import/no-unresolved
-  1:8  error  Unexpected use of file extension "js" for "./lib.js"  import/extensions
+  3:8  error  Unable to resolve path to module './not-found.js'     import/no-unresolved
 
 ✖ 2 problems (2 errors, 0 warnings)
 
